@@ -12,7 +12,4 @@ for sheet in sheets:
     df = pd.read_excel(file_name, sheet_name=sheet)
     clms = df.columns.to_list()
     for clm in clms:
-        if clm =="Name":
-            word = df.loc[0, clm]
-            if word in md: 
-                print('success')
+        print(clm)
